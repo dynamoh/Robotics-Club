@@ -1,7 +1,16 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
+from datetime import datetime, date
 
 from accounts.models import Profile
 from RoboticsClub.globals import POSTS
+
+
+def current_year():
+    return date.today().year
+
+def max_value_current_year(value):
+    return MaxValueValidator(current_year())(value)
 
 class Team(models.Model):
     """
@@ -16,7 +25,8 @@ class Team(models.Model):
     facebook = models.URLField(max_length=1200)
     twitter = models.URLField(max_length=1200)
 
-    appointed_on = models.DateField(auto_now_add=True)
+    appointed_for = models.PositiveIntegerField(
+        default=current_year(), validators=[MinValueValidator(2012), max_value_current_year])
 
     class Meta:
         verbose_name_plural = 'Team Members'
