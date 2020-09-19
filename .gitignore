@@ -58,6 +58,7 @@ __pycache__
 migrations
 sent_mails
 media
+images
 
 # Flask stuff:
 instance/

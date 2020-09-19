@@ -1,0 +1,1297 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Robotics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?v=3.4.1" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+  <link href="{% static 'css/jquery.mb.YTPlayer.min.css' %}" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/pre.css' %}">
+
+
+
+  <!--my own icon dwln-->
+  <link rel="stylesheet" href="{% static 'my-icons-collection/font/flaticon.css' %}">
+
+  <!--animated video text of home pg-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+
+<body data-spy="scroll" data-target=".site-navbar-target" class="bbody" data-offset="300" onload="preFunc()">
+
+
+  <div class="preloadernew">
+
+    <img src="images\logo2.jpg" alt=""><br>
+    <div class="anim">
+
+
+      <div id="ot-load-circle">
+        <div class="ot-loader">
+          <div class="ot-loader">
+            <div class="ot-loader">
+              <div class="ot-loader">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar js-sticky-header site-navbar-target">
+      <span class="navcolor"><button class="barbutton" type="button" name="button"> <i class="fa fa-bars"
+            aria-hidden="true"></i> </button>
+        <div class="navButton-text" id="changetext">Home</div>
+      </span>
+      <button type="button" class="upevents" name="button">Upcoming Events</button>
+
+      <nav class="navbar navbar-expand-lg navbar-light flex-column mynewnavbar" id="mynewnav">
+
+
+
+
+        <div class="navlist " id="navbarNav">
+          <ul class="navbar-nav flex-column ">
+            <li class="nav-item">
+              <button type="button" class="navclose" name="button">&#x2190;</button>
+            </li>
+
+
+            <li class="nav-item">
+              <button type="button" class="butt but1" name="button"><a class="nav-link" href="#home-section">
+                  Home</a></button>
+            </li>
+
+            <li class="nav-item">
+              <button type="button" class="butt but2" name="button"> <a class="nav-link" href="#aboutus">About
+                  Us</a></button>
+            </li>
+
+            <li class="nav-item">
+              <button type="button" class="butt but3" name="button"><a class="nav-link"
+                  href="#project-section">Projects</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="butt but4" name="button"><a class="nav-link"
+                  href="#schedule-section">Schedule</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="butt but5" name="button"><a class="nav-link "
+                  href="#achievement-section">Achievements</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="butt but6" name="button"><a class="nav-link "
+                  href="#ourteam-section">Team</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="butt but7" name="button"><a class="nav-link"
+                  href="#gallery-section">Gallery</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="butt but9" name="button"><a class="nav-link"
+                  href="#contact-section">Contact</a></button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="butt but8" name="button"><a class="nav-link"
+                  href="#sponsorslider">Sponsors</a></button>
+            </li>
+            <br>
+
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="upcoming">
+
+      <button type="button" class="upclose" name="button">CLOSE</button>
+
+      <div class="blank">
+
+        <div class="upc" align="center">
+
+          <div class="upcir">
+
+          </div>
+
+          <div class="">
+            <h3>Upcoming Events</h3>
+          </div>
+
+        </div>
+
+        <div class="pas" align="center">
+
+          <div class="pascir">
+
+          </div>
+
+          <div class="">
+            <h3>Past Events</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hea">
+
+        <h1>Upcoming Events</h1>
+      </div>
+
+      <div class="future">
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="{% static 'images/upcom4.jpg' %}" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>RoboSoccer</h3>
+            <p>To be held on September 1, 2019.</p>
+          </div>
+
+        </div>
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/edo.JPG" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>Workshop by EdoSquare</h3>
+            <p>1/10/2019 - 3/10/2019</p>
+          </div>
+
+        </div>
+
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/upcom6.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>Line Following Robot</h3>
+            <p>To be held on October 27, 2019.</p>
+          </div>
+
+        </div>
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/robo.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>Robothon</h3>
+            <p>To be held in November 2019.</p>
+          </div>
+
+        </div>
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/hexrace.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>Hexabot Race</h3>
+            <p>To be held in January 2020.</p>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="hea">
+
+        <h1>Past Events</h1>
+      </div>
+
+
+
+      <div class="past">
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/upcom3.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>RoboWar</h3>
+            <p>Was held in March 2019.</p>
+          </div>
+
+
+
+        </div>
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/upcom5.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>RoboThon</h3>
+            <p>Was held in March 2019.</p>
+          </div>
+
+
+        </div>
+
+        <div class="evecard">
+          <div class="eveimage">
+            <img src="images/robocop.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>RoboCop</h3>
+            <p>Was held in February 2019.</p>
+          </div>
+        </div>
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/upcom2.jpg" alt="">
+          </div>
+          <div class="evecontent">
+            <h3>Line Following Robot</h3>
+            <p>Was held in November 2018.</p>
+          </div>
+
+        </div>
+
+
+        <div class="evecard">
+
+          <div class="eveimage">
+            <img src="images/upcom1.jpg" alt="">
+          </div>
+          <div class="evecontent" align="center">
+            <h3>RoboSoccer</h3>
+            <p>Was held in September 2018.</p>
+          </div>
+
+
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+    <div class="webbody vidback" id="home-section">
+      <div class="fullscreen-video-wrap">
+        <video src="{% static 'images/vid1234.mp4' %}" autoplay="true" loop="true" muted="true">
+
+        </video>
+        <img src="images/battlebots.jpg" alt="">
+
+      </div>
+      <div class="content">
+
+        <h1 class="ml15">
+          <span class="word wordr">ROBOTICS</span>
+          <span class="word">CLUB</span>
+          <span class="word">IIITDM</span>
+          <span class="word">JABALPUR</span>
+        </h1>
+        <a href="#aboutus"> <button type="button" class="word121" name="button">&#8595;</button> </a>
+        <p class="word121">Explore</p>
+
+      </div>
+    </div>
+
+
+
+    <div class="webbody section-1 backgd">
+
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3">
+
+            <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="">
+              <div class="icon-wrap"><span class="flaticon-roboto-logo"></span></div>
+              <div class="counter-text">
+                <h2 class="timer count-title count-number" data-to="442" data-speed="2500"></h2>
+                <span>Members</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-wrap"><span class="flaticon-browser"></span></div>
+              <div class="counter-text">
+                <h2 class="timer count-title count-number" data-to="328" data-speed="3000"></h2>
+                <span>Daily<span class="space"> </span>Visitors</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3">
+
+            <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-wrap"><span class="flaticon-roboto-logo"></span></div>
+              <div class="counter-text">
+                <h2 class="timer count-title count-number" data-to="47" data-speed="3000"></h2>
+                <span>Events<span class="space"> </span>Held</span>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-wrap"><span class="flaticon-award"></span></div>
+              <div class="counter-text">
+                <h2 class="timer count-title count-number" data-to="76" data-speed="3000"></h2>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <section class="webbody" id="aboutus">
+
+      <div class="aboutus" id="aboutus-section">
+
+
+
+        <div class="backkk">
+
+          <div class="about1234">
+
+            <h2 class="section-title121">About US</h2>
+            <p>The Robotics Club of IIITDM Jabalpur is a fraternity, not just a group but a faction of such students
+              whose passions dwell in beholding wires and metal beget a machine that has a brain of its own.</p>
+            <p>It's here, that seeds of lecturing are sown by those experienced and erudite, nurtured by the interested
+              and novice , pruned by minute yet unprecedented errors and harvested in competitions all over India. The
+              Club offers indispensible guidance, workshops and tutorials along with tools, equipments, components and
+              workspace. The family meets periodically to discuss over matters such as the management of the workspace,
+              workshops, projects and competitions. We welcome anyone, with or without prior knowledge, who wishes to be
+              a part of this fraternity. There are no pre-requisites to join because we have members that believe in the
+              transfer of knowledge, especially that which concerns our precious interest in Robotics..</p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <div class="webbody site-section section-2" id="project-section">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 mb-5" align="center">
+            <h2 class="section-title">Projects</h2>
+            <p class="para" style="font-size:1.3rem">The club gives wide range of exposure when it comes to practical
+              gain of knowledge. And therefore we believe in conducting regular club activity to help each member groom
+              and nurture well. Some of which are mentioned below:</p>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="container">
+
+        <div class="owl-carousel nonloop-block-14 carooo">
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/hexapod.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Hexapod</h3>
+
+              <p>It was built using 3D printed parts.Each<br> of it's leg has three Servo motors, head and <br> tail
+                also has a Servo motor.It is able to <br> Crawl in different terrains.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/dancing.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Dancing Robot</h3>
+
+              <p> It was made for teaching purpose. <br> Different dance patterns were observed.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/pid.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>PID Controller</h3>
+
+              <p>A robot that follows a line against a contrasting background by implementing Proportional Integral
+                Derivative (PID) algorithm. It can traverse immensely complex networks that otherwise would be a
+                nightmare if manually done.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/roboarm.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Robotic Arm</h3>
+
+              <p>It is made using self designed 3D printed parts and has 3 degrees of freedom.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/maze.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Maze Solver</h3>
+
+              <p>Using PID Controlled motion and Path planners it scans the whole arena and then it finds the shortest
+                path using a particular algorithm.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/badmin.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Badminton Bot</h3>
+
+              <p>Badminton is a dynamic sport and <br> therefore only advanced concepts and technologies are in order to
+                realize a badminton robot. Based on many projects with industrial partners.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/pickandplace.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Pick and Place</h3>
+
+              <p>It was built using 3D printed parts and controlled by Servo motors. It was able to pick a tennis ball.
+              </p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <video src="images/snake.mp4" autoplay=true muted=true loop=true poster="posterimage.jpg">
+
+              </video>
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Snake Robot</h3>
+
+              <p>We have Fabricated a snake type robot <br> with 12 Servo motors and implemented sine and cosine waves
+                to see Serpentile and Rectilinear motion.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/wallfollower.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Wall Follower</h3>
+
+              <p>It is a simple project made with the help of sensors.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/quadruped.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Quadruped Robot</h3>
+
+              <p>It has been fabricated using 3D printed Parts.It consists of 12 Servo Motors.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/surveillance.jpg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Survelliance Robot</h3>
+
+              <p>Built a robot car with an On-board pan-tilt camera, which sends live video feeds to the webpage and the
+                bot can be controlled using the web interface.</p>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="caroimage">
+              <img src="images/selfbalance1.jpeg" alt="">
+            </div>
+
+            <div class="carocontent">
+              <span class="flaticon-stationary-bike display-3 text-white mb-4 d-inline-block"></span>
+              <h3>Self Balancing Robot</h3>
+
+              <p>It was made using 3D printed parts, <br> Stepper motors, ATmega IC and MPU6050. The main concept behind
+                the self balancing bot was in the code. </p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="webbody site-section section-2" id="schedule-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-5" align="center">
+            <h2 class="section-title">Schedule</h2>
+            <p class="para" style="font-size:1.3rem">It is always better to make the plan before executing it. So here
+              we presnt you the monthly planner to help you give early start.</p>
+          </div>
+        </div>
+        <h1 style="text-align: center;">August Month</h1>
+        <table>
+          <tr>
+            <th>EVENTS</th>
+            <th>WEEK</th>
+
+          </tr>
+          <tr>
+            <td>Orientation</td>
+
+            <td>1st Week</td>
+          </tr>
+          <tr>
+            <td>Club Introduction Session</td>
+
+            <td>2nd week</td>
+          </tr>
+          <tr>
+            <td>First Working Session</td>
+
+            <td>3rd week</td>
+          </tr>
+          <tr>
+            <td>To be Updated</td>
+
+            <td>4th week</td>
+          </tr>
+
+        </table>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="webbody site-section section-2" id="achievement-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-5" align="center">
+            <h2 class="section-title">When Glory Knocks Your Door!!</h2>
+            <p class="para" style="font-size:1.3rem">We at Robotics Club not only say but also prove ourselves at
+              various platform we perform. The hard work we put consistently comes out as a victory by bringing pride to
+              the IIITDMJ institute as well.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="owl-carousel nonloop-block-13">
+
+        <a class="work-thumb">
+          <div class="work-text">
+            <h3>LFR at Inter IIIT</h3>
+            <p class="category">Completed the task by implementing Proportional <br> Integral Derivative Algorithm at
+              Inter IIIT Fest.</p>
+          </div>
+          <img src="images/Lfrinter.jpg" alt="Image" class="img-fluid">
+        </a>
+
+        <a class="work-thumb">
+          <div class="work-text">
+            <h3>Success at E-YANTRA</h3>
+            <p class="category">Completed all the tasks at E-YANTRA.</p>
+          </div>
+          <img src="images/eyantra.jpg" alt="Image" class="img-fluid">
+        </a>
+
+        <a class="work-thumb">
+          <div class="work-text">
+            <h3>RoboWar at IIIT Delhi</h3>
+            <p class="category">We were the SemiFinalists of the national <br> Robowar event organized at IIIT Delhi.
+            </p>
+          </div>
+          <img src="images/robosemi.jpg" alt="Image" class="img-fluid">
+        </a>
+
+        <a class="work-thumb">
+          <div class="work-text">
+            <h3>LFR at IIIT Delhi</h3>
+            <span class="category">In ESYA-18 our team participated in the LFR <br> event and reached the SemiFinals
+              leaving behind <br> 77 other teams.</span>
+          </div>
+          <img src="images/iiitdelhi.jpeg" alt="Image" class="img-fluid">
+        </a>
+
+        <a class="work-thumb">
+          <div class="work-text">
+            <h3>Robowar at Hitkarni College</h3>
+            <p class="category">We Won the Robowar at Hitkarni college of Engineering Jabalpur.</p>
+          </div>
+          <img src="images/robowarfinal.jpg" alt="Image" class="img-fluid">
+        </a>
+
+        <a class="work-thumb">
+          <div class="work-text">
+            <h3>TechFest IIT Bombay 2018</h3>
+            <span class="category">Our team had participated in operation Rahat which <br> was a Quadcopter
+              event.</span>
+          </div>
+          <img src="images/rahat.jpeg" alt="Image" class="img-fluid">
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="webbody site-section" id="ourteam-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" align="center">
+            <h2 class="section-title">Our Team</h2>
+            <p class="para">A work never gets accomplished if it is not done in a team spirit. Each of the member
+              associated with the club is important in upliftinf of the club. However, here we have some of the majoy
+              members who has been running the club successful for a long time.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <section class="webbody">
+
+      <div class="aboutcards fade-in">
+
+
+
+        <div class="container">
+
+          <div class="card">
+
+            <div class="img-box">
+              <img src="images/tanuja-maam.jpg" alt="">
+            </div>
+
+            <div class="content">
+              <h2>Dr. Tanuja Sheorey<br><span> Faculty Incharge </span></h2>
+              <p>The most supporting faculty member of the club</p>
+
+
+              <ul>
+                <li><a href="http://faculty.iiitdmj.ac.in/faculty/tanush" target="_blank"><i class="fab fa-facebook"
+                      aria-hidden="true"></i></a></li>
+
+
+                <li><a href="http://faculty.iiitdmj.ac.in/faculty/tanush" target="_blank"><i class="fab fa-linkedin"
+                      aria-hidden="true"></i></a></li>
+
+                <li><a href="http://faculty.iiitdmj.ac.in/faculty/tanush"><i class="fas fa-phone"
+                      aria-hidden="true"></i></a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+
+            <div class="img-box">
+              <img src="images/aman-co.jpeg" alt="">
+            </div>
+
+            <div class="content">
+              <h2>Aman Singhal<br><span> Cordinator </span></h2>
+              <p>The team guide and mentor</p>
+
+
+              <ul>
+                <li><a href="https://www.facebook.com/amansinghal999" target="_blank"><i class="fab fa-facebook"
+                      aria-hidden="true"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/aman-singhal-4a4498164" target="_blank"><i
+                      class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+
+                <li><a href="tel:8930700102" data-toggle="popover" title="Contact on: 8930700102"><i
+                      class="fas fa-phone" aria-hidden="true"></i></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+
+          <div class="card">
+
+            <div class="img-box">
+              <img src="images/ayush-mishra-coco.jpg" alt="">
+            </div>
+
+            <div class="content">
+              <h2>Ayush Mishra<br><span> Co-Cordinator </span></h2>
+              <p>The helping hand</p>
+
+
+              <ul>
+                <li><a href="https://www.facebook.com/ayushman.mishra.397501" target="_blank"><i class="fab fa-facebook"
+                      aria-hidden="true"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/ayush-mishra-a71688127/" target="_blank"><i
+                      class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+
+                <li><a href="tel:8529458915" data-toggle="popover" title="Contact on: 8529458915"><i
+                      class="fas fa-phone" aria-hidden="true"></i></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+
+            <div class="img-box">
+              <img src="images/ayus-gupta.jpeg" alt="">
+            </div>
+
+            <div class="content">
+              <h2>Ayush Gupta<br><span>Co-Cordinator</span></h2>
+              <p>The helping hand</p>
+
+
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100007277046533" target="_blank"><i
+                      class="fab fa-facebook" aria-hidden="true"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/ayush-gupta-a375ab171" target="_blank"><i
+                      class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+
+                <li><a href="tel:+919519161620" data-toggle="popover" title="Contact on: 9519161620" target="_blank"><i
+                      class="fas fa-phone" aria-hidden="true"></i></a></li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="webbody galleryy" id="gallery-section">
+
+
+      <div class="gallery-preview">
+
+        <div class="contentgall">
+          <h2 class="text">Gallery</h2>
+          <p class="text">Let's see what we have in store for you.</p>
+
+          <button class="explore text" type="submit" name="button">Explore <b id="arrow">&rarr;</b>
+          </button>
+        </div>
+
+        <div class="image">
+
+          <img src="images/robot.jpg" alt="">
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="gallery-original">
+
+        <div class="closesection">
+
+          <button class="closebutton" type="submit" name="button"> X </button>
+
+        </div>
+
+
+        <div class="containergall">
+
+          <div class="mySlides">
+
+            <img src="images/img1.JPG" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img2.JPG" alt="">
+          </div>
+
+
+          <div class="mySlides">
+
+            <img src="images/img3.JPG" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img4.JPG" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img5.jpg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img6.jpg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img7.JPG" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img8.jpeg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img9.jpeg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img10.jpeg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <video src="images/img11.mp4" muted loop autoplay poster="posterimage.jpg">
+
+            </video>
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img12.jpg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img13.jpg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img14.jpg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img15.jpg" alt="">
+          </div>
+
+
+          <div class="mySlides">
+
+            <img src="images/img16.jpg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img17.jpeg" alt="">
+          </div>
+
+          <div class="mySlides">
+
+            <video src="images/img18.mp4" muted loop autoplay poster="posterimage.jpg">
+
+            </video>
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/img19.jpg" alt="">
+          </div>
+          <div class="mySlides">
+
+            <img src="images/img20.jpg" alt="">
+          </div>
+
+
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images/img1.JPG" style="width:100%" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img2.JPG" style="width:100%" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img3.JPG" style="width:100%" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img4.JPG" style="width:100%" onclick="currentSlide(4)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img7.JPG" style="width:100%" onclick="currentSlide(7)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img8.jpeg" style="width:100%" onclick="currentSlide(8)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img9.jpeg" style="width:100%" onclick="currentSlide(9)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img10.jpeg" style="width:100%" onclick="currentSlide(10)" alt="">
+            </div>
+            <div class="column">
+              <video class="demo cursor" src="images/img11.mp4" style="width:100%" muted loop autoplay
+                onclick="currentSlide(11)" alt=""></video>
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img12.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img13.jpg" style="width:100%" onclick="currentSlide(13)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img14.jpg" style="width:100%" onclick="currentSlide(14)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img15.jpg" style="width:100%" onclick="currentSlide(15)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img16.jpg" style="width:100%" onclick="currentSlide(16)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img17.jpeg" style="width:100%" onclick="currentSlide(17)" alt="">
+            </div>
+            <div class="column">
+              <video class="demo cursor" src="images/img18.mp4" style="width:100%" muted loop autoplay
+                onclick="currentSlide(18)" alt=""></video> </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img19.jpg" style="width:100%" onclick="currentSlide(19)" alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/img20.jpg" style="width:100%" onclick="currentSlide(20)" alt="">
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <div class="webbody site-section bg-dark" id="contact-section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+
+
+
+            <h2 class="section-title mb-3">Contact Us</h2>
+            <p class="mb-5" style="font-size:1.3rem">We at the technical club would love to hear from you. Write down
+              all your queries, doubts or appreciation. We welcome all with equal vision and opne arms...</p>
+
+            <form method="post" data-aos="fade">
+              <div class="form-group row">
+                <div class="col-md-6 mb-3 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="email" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea class="form-control" id="" cols="30" rows="5"
+                    placeholder="Write your message here."></textarea>
+                </div><br>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+
+                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+  <div class="webbody icon-bar" id="social-links">
+    <a href="https://www.facebook.com/robotics.iiitdmj/" class="facebook" target="_blank"><i
+        class="fab fa-facebook-f"></i></a>
+    <a href="#" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="google" target="_blank"><i class="fab fa-google"></i></a>
+    <a href="https://www.linkedin.com/company/robotics-club-iiitdmj" class="linkedin" target="_blank"><i
+        class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/watch?v=VLLp8qVKeTo" class="youtube" target="_blank"><i
+        class="fab fa-youtube"></i></a>
+  </div>
+
+
+  <!--<div class="webbody container my-5" id="sponsorslider">
+    <h2>Our  Sponsors</h2>
+     <section class="webbody customer-logos slider">
+        <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+        <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+        <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+     </section>
+  </div>-->
+
+  <div class="footer webbody">
+
+    <div class="line" style="margin-top:0px">
+
+    </div>
+
+    <div align="center" class="cright">
+      <p><i class="fa fa-copyright copicon" aria-hidden="true"> </i><span class="devtext">Developed by</span> <button
+          class="devname"> <a class="anc" href="https://www.facebook.com/heet.gupta" target="_blank">Heet Gupta </a>
+        </button>
+      </p>
+
+    </div>
+
+  </div>
+
+  <!--<span class="devtext">and</span> <button class="devname" ><a class="anc" href="https://www.facebook.com/ayusha.singh" target="_blank"> Ayusha Singh </a> </button>
+
+  site-wrap -->
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'js/jquery.sticky.js' %}"></script>
+  <script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
+  <script src="{% static 'js/jquery.floating-social-share.js' %}"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js"></script>
+
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!--gaellery section-->
+  <script src="{% static 'js/lightbox.js' %}"></script>
+
+  <!--team scetion-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="{% static 'js/image.js' %}">
+
+  </script>
+
+  <script src="{% static 'js/new.js' %}">
+
+  </script>
+
+  <script src="{% static 'js/pre.js' %}">
+
+  </script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('.card').tilt({
+        maxTilt: 10,
+      })
+    })
+
+
+
+
+
+  </script>
+
+
+
+
+  <!--sponsor -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+
+
+
+</body>
+
+</html>
