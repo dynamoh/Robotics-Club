@@ -1,5 +1,4 @@
 from django.apps import AppConfig
 
-
-class RoboticsConfig(AppConfig):
+class TeamConfig(AppConfig):
     name = 'Team'

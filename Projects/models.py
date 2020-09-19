@@ -25,7 +25,6 @@ class ProjectFiles(models.Model):
 
     project_id = models.ForeignKey(Projects, on_delete=models.CASCADE, related_name="profectFiles")
     file = models.FileField(upload_to=project_file_upload_path)
-    file_type = models.CharField(max_length=250)
     uploaded_on = models.DateField(auto_now_add=True)
 
     class Meta:

@@ -22,7 +22,7 @@ from django.views.static import serve
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Team.urls'))
+    path('', include('Robotics.urls'))
 ]
 
 if settings.DEBUG:
