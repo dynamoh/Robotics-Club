@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'robotics'
+    'accounts',
+    'Team',
+    'Projects'
 ]
 
 MIDDLEWARE = [
@@ -72,7 +74,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'RoboticsClub.wsgi.application'
-
+AUTH_USER_MODEL = 'accounts.user'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

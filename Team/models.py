@@ -1,23 +1,16 @@
 from django.db import models
+
+from accounts.models import Profile
 from RoboticsClub.globals import POSTS
 
 class Team(models.Model):
     """
-    list of all coordinators till date.
-    NOTE: current coordinator will be fetched by most recent date
+    Data of all Team members till date.
+    NOTE: current team members will be fetched by most recent date
     """
 
-    name = models.CharField(max_length=350)
+    profile_id = models.OneToOneField(Profile, on_delete=models.CASCADE, related_name="teamMember")
     post = models.CharField(max_length=750, choices=POSTS)
-
-    email = models.EmailField(
-        verbose_name='email address',
-        max_length=255,
-        unique=True,
-    )
-    
-    phone = models.CharField(max_length=10)
-    avatar = models.ImageField(upload_to='Coordinators/')
 
     linkedIn = models.URLField(max_length=1200)
     facebook = models.URLField(max_length=1200)
