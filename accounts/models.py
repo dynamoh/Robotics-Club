@@ -9,7 +9,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 
 
-class UserManager(models.Model):
+class UserManager(BaseUserManager):
     def create_user(self, email, username, password=None):
         """
         Creates and saves a User with the given email and password.
